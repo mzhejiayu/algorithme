@@ -2,7 +2,10 @@ package micro100;
 
 
 import java.util.LinkedList;
-
+/*
+ * 构建一个拥有push pop min函数的一个栈，并且这些操作均为O(1)
+ * 解法：将上一个min的信息储存在新的min中，在新的min退出之后，可以还原min
+ */
 public class StackWithMinO1 {
 	
 	LinkedList<Integer> _list;
@@ -45,21 +48,21 @@ public class StackWithMinO1 {
 		}
 	}
 	public static void main(String args[]){
-		StackWithMinO1 a = new StackWithMinO1();
-		a.push(111);
-		a.push(83);
-		a.push(99);
-		a.push(81);
-		a.pop();
-		a.pop();
-		a.pop();
-		a.pop();
-		try {
-			System.out.println(a.min());
-		} catch (Exception e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+//		StackWithMinO1 a = new StackWithMinO1();
+//		a.push(111);
+//		a.push(83);
+//		a.push(99);
+//		a.push(81);
+//		a.pop();
+//		a.pop();
+//		a.pop();
+//		a.pop();
+//		try {
+//			System.out.println(a.min());
+//		} catch (Exception e) {
+//			// TODO Auto-generated catch block
+//			e.printStackTrace();
+//		}
 	}
 	
 }
